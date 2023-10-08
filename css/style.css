@@ -8,11 +8,11 @@ body {
 }
 
 #scene-tabbar {
-  background: linear-gradient(#fee970, #e4b619);;
+  background: linear-gradient(rgb(255, 157, 0), rgb(0, 0, 107));;
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 
@@ -49,6 +49,8 @@ body {
   margin: 0.2em;
   background-color: #5d6ec7;
   width: 90%;
+  overflow-x: hidden;
+  overflow-y: hidden ;
 }
 
 #scene-tabbar .list-item:hover {
@@ -57,11 +59,13 @@ body {
 }
 
 #scene-body {
-  background: #dbd7d4;
+  background: #cecba9;
   height: inherit;
   font-size: 1em;
   height: 100vh;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+
 }
 
 @media only screen and (max-width: 777px) {
